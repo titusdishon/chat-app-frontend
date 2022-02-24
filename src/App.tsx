@@ -1,10 +1,8 @@
-import React from 'react'
-import ChatPage from './pages/ChatPage'
+import ChatPage from "./pages/ChatPage";
 
 const App = () => {
-  return (
-   <ChatPage/>
-  )
-}
+  const id = Math.floor(Math.random() * 1000);
+  return <ChatPage id={id.toString()} />;
+};
 
-export default App
+export default App;
