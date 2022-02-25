@@ -1,9 +1,9 @@
-
 /**
  * Chat box to hold the messages send and received
  */
 
 import {
+  Alert,
   Avatar,
   Box,
   CardContent,
@@ -50,7 +50,7 @@ const Messages: React.FC<Props> = ({ name }) => {
         }}
       >
         <List sx={{ width: "100%" }} data-testid="chat-list">
-          {response.length > 0 &&
+          {response.length > 0 ? (
             response.map((message: any, key) => (
               <ListItem
                 data-testid="chat"
@@ -120,7 +120,10 @@ const Messages: React.FC<Props> = ({ name }) => {
                   </CardContent>
                 </Card>
               </ListItem>
-            ))}
+            ))
+          ) : (
+            <Alert severity="info">No chats yet!</Alert>
+          )}
         </List>
       </Box>
     </>

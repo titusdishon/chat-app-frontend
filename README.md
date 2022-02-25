@@ -50,23 +50,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 Sample output 
-```bash
- PASS  src/pages/__tests__/message.page.test.tsx
- PASS  src/pages/__tests__/chat.page.test.tsx
- PASS  src/pages/__tests__/message.field.test.tsx
-
-Test Suites: 3 passed, 3 total
-Tests:       9 passed, 9 total
-Snapshots:   0 total
-Time:        3.009 s
-Ran all test suites.
-
-Watch Usage: Press w to show more.
-```
+![Tests](https://raw.githubusercontent.com/titusdishon/chat-app-frontend/main/tests.png)
 
 ## Use case
 This app is intented for use by two clients
 
 ## Screen shots
+![Home](https://raw.githubusercontent.com/titusdishon/chat-app-frontend/main/home.png)
+![receive](https://raw.githubusercontent.com/titusdishon/chat-app-frontend/main/received.png)
+![send](https://raw.githubusercontent.com/titusdishon/chat-app-frontend/main/send.png)
+![Mobile](https://raw.githubusercontent.com/titusdishon/chat-app-frontend/main/mobile.png)
+
+The reset button to the top right corner can be used to delete all the messages that have already been send.
+Follow the [link](https://cocky-agnesi-f3e7c4.netlify.app/) to access the hosted application
 # chat-app-frontend
 
