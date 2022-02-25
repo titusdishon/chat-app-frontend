@@ -1,3 +1,8 @@
+
+/**
+ * Chat box to hold the messages send and received
+ */
+
 import {
   Avatar,
   Box,
@@ -17,6 +22,7 @@ type response = {
   id: string;
   text: string;
 };
+
 const Messages: React.FC<Props> = ({ name }) => {
   const [response, setResponse] = useState<response[]>([]);
   useEffect(() => {
@@ -44,7 +50,7 @@ const Messages: React.FC<Props> = ({ name }) => {
         }}
       >
         <List sx={{ width: "100%" }} data-testid="chat-list">
-          {response.length>0 &&
+          {response.length > 0 &&
             response.map((message: any, key) => (
               <ListItem
                 data-testid="chat"
@@ -60,7 +66,7 @@ const Messages: React.FC<Props> = ({ name }) => {
                 <Card
                   data-testid="chat-card"
                   sx={{
-                    minWidth: "13rem",
+                    minWidth: "10rem",
                     maxWidth: "50%",
                     boxShadow: "-9px 10px 58px -5px rgba(0,0,0,0.22)",
                     float: checkMyTexts(message) ? "left" : "right",

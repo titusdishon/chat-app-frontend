@@ -1,3 +1,7 @@
+
+/**
+ * Text area field to supply a new message
+ */
 import { Button, InputAdornment, TextField } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { useState } from "react";
